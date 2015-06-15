@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Vision to Language Survey by VisionToLanguageTeam</title>
+    <title>Blending Vision &amp; Language in AI: A Survey on the Available Corpora by VisionToLanguageTeam</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Vision to Language Survey</h1>
+      <h1 class="project-name">Blending Vision &amp; Language in AI: A Survey on the Available Corpora</h1>
       <h2 class="project-tagline"></h2>
       <a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey" class="btn">View on GitHub</a>
       <a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey/zipball/master" class="btn">Download .zip</a>
@@ -23,94 +23,14 @@
 <a id="1-introduction" class="anchor" href="#1-introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>1. Introduction</strong>
 </h2>
 
-<p>The past year has seen an explosion in work on vision to language. In the 2012 ImageNet competition, a neural network model (`SuperVision') won at the task of object  classification.
-In the 2013 ImageNet competition, a neural network model pioneered by UC Berkeley won at the task of object detection.
-This unified two otherwise disparate computer vision fields under the same general modelling technique.  It became possible to train object detectors reliably, when provided with enough training data.</p>
+<p>Integrating vision and language has long been a dream in work on artificial intelligence (AI).
+In the past two years, we have witnessed an explosion of work that brings together vision and language from images to videos and beyond.
+The available corpora have played a crucial role in advancing this area of research.
+In this paper we propose a set of quality metrics for evaluating and analyzing the vision-&amp;-language datasets and classify them accordingly.
+Our analyses show that the most recent datasets have been using more complex language.</p>
 
 <h2>
-<a id="2-video-captioning" class="anchor" href="#2-video-captioning" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>2. Video Captioning</strong>
-</h2>
-
-<ul>
-<li>
-<p><strong>Robocup Soccer Dataset</strong> (UT Austin)</p>
-
-<ul>
-<li><p>There have been many efforts on automatic sportscasting of simulated soccer games. The most recent dataset for training purposes in this domain is a multilingual corpus of Robocup soccer events aligned with human-generated comments in Korean and English.</p></li>
-<li><p>Training a Multilingual Sportscaster: Using Perceptual Context to Learn Language.
-David L. Chen, Joohyun Kim, Raymond J. Mooney.
-In Journal of Artificial Intelligence Research (JAIR) , 37, pages 397-435, 2010.
-<a href="http://www.cs.utexas.edu/%7Eml/clamp/sportscasting/">[<strong>Project Page</strong>]</a>
-<a href="http://dl.acm.org/citation.cfm?id=1861761">[ACM]</a>
-<a href="https://www.jair.org/media/2962/live-2962-4903-jair.pdf">[PDF]</a>
-<a href="http://www.jair.org/papers/paper2962.html">[JAIR link]</a>    </p></li>
-</ul>
-</li>
-<li>
-<p><strong>Video-with-Sentences Dataset</strong> (Purdue University)</p>
-
-<ul>
-<li><p>This work provides a dataset for learning word meanings from short video clips which are manually annotated with one or more sentences. Their dataset manually annotates 3-5 second long 61 video clips with sentences which are highly resctricted in terms of grammar and language.</p></li>
-<li><p>Grounded Language Learning from Video Described with Sentences.
-H. Yu and J. M. Siskind.
-In Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics, 2013, <em>best paper award</em>.
-<a href="http://haonanyu.com/research/acl2013/">[<strong>Project Page</strong>]</a>
-<a href="http://haonanyu.com/wp-content/uploads/2013/05/yu13.pdf">[PDF]</a></p></li>
-</ul>
-</li>
-</ul>
-
-
-
-
-
-<ul>
-<li>
-<p><strong>Multilingual Parallel Video Description Dataset</strong> (UT Austin &amp; MSR)</p>
-
-<ul>
-<li><p>One sentence here.</p></li>
-<li><p>Collecting Highly Parallel Data for Paraphrase Evaluation.
-David L. Chen and William B. Dolan.
-Annual Meetings of the Association for Computational Linguistics (ACL), 2011.
-<a href="http://www.cs.utexas.edu/users/ml/clamp/videoDescription/">[<strong>Project Page</strong>]</a>
-<a href="http://www.cs.utexas.edu/users/ml/papers/chen.acl11.pdf">[PDF]</a></p></li>
-</ul>
-</li>
-<li>
-<p><strong>How-To Video Captions</strong></p>
-
-<ul>
-<li><p>One sentence here.</p></li>
-<li><p>What's Cookin'? Interpreting Cooking Videos using Text, Speech and Vision.
-Jonathan Malmaud, Jonathan Huang, Vivek Rathod, Nick Johnston, Andrew Rabinovich, and Kevin Murphy.
-NAACL 2015.
-<a href="http://www.cs.ubc.ca/%7Emurphyk/Papers/naacl15.pdf">[PDF]</a></p></li>
-<li><p>Discriminative Unsupervised Alignment of Natural Language Instructions with Corresponding Video Segments.
-I. Naim, Y. Song, Q. Liu, L. Huang, H. Kautz, J. Luo, and D. Gildea. 
-Proc. NAACL 2015.
-<a href="http://acl.cs.qc.edu/%7Elhuang/papers/naim-video.pdf">[PDF]</a></p></li>
-</ul>
-</li>
-<li>
-<p><strong>Saarbrucken Corpus of Textually Annotated Scenes (TACOS Corpus)</strong> (Saarland University &amp;  Max Planck Institute for Informatics)</p>
-
-<ul>
-<li><p>One sentence here.</p></li>
-<li><p>Grounding Action Descriptions in Videos.
-Michaela Regneri, Marcus Rohrbach, Dominikus Wetzel, Stefan Thater, Bernt Schiele, and Manfred Pinkal.
-TACL 2013.
-<a href="http://www.aclweb.org/anthology/Q13-1003">[PDF]</a></p></li>
-</ul>
-</li>
-</ul>
-
-
-
-
-
-<h2>
-<a id="3-image-captioning" class="anchor" href="#3-image-captioning" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>3. Image Captioning</strong>
+<a id="2-image-captioning" class="anchor" href="#2-image-captioning" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>2. Image Captioning</strong>
 </h2>
 
 <h3>
@@ -121,9 +41,9 @@ TACL 2013.
 <p><strong>SBU Captioned Photo Dataset</strong> (Stony Brook University)</p>
 
 <ul>
-<li><p>One sentence here.</p></li>
-<li><p>Im2Text: Describing Images Using 1 Million Captioned Photograph.
-Vicente Ordonez, Girish Kulkarni, Tamara L. Berg. s.
+<li><p>This dataset contains 1 million images with original user-generated captions, collected in the wild by systematic querying (specific terms such as objects and actions) and then filtering Flickr photos with descriptions longer than certain mean length.</p></li>
+<li><p>Vicente Ordonez, Girish Kulkarni, Tamara L. Berg. s.
+<em>Im2Text: Describing Images Using 1 Million Captioned Photograph.</em>
 Neural Information Processing Systems(NIPS), 2011.
 <a href="http://tlberg.cs.unc.edu/vicente/sbucaptions/">[<strong>Project Page</strong>]</a>
 <a href="http://tamaraberg.com/papers/generation_nips2011.pdf">[PDF]</a></p></li>
@@ -133,8 +53,14 @@ Neural Information Processing Systems(NIPS), 2011.
 <p><strong>Flickr's 100 million images dataset 2012 (YFCC100M)</strong></p>
 
 <ul>
-<li><p>One sentence here.</p></li>
-<li><p><a href="http://labs.yahoo.com/news/yfcc100m/">[<strong>Project Page</strong>]</a></p></li>
+<li><p>YFCC100M contains 100 million media objects (together with their original metadata), about 99.2 million photos
+and 0.8 million videos from Flickr (taken from 2004 until early 2014), all of which are licensed as Creative Commons.</p></li>
+<li><p>Bart Thomee, David A. Shamma, Gerald Friedland, Benjamin Elizalde, Karl Ni, Douglas Poland, Damian Borth, Li-Jia Li.
+<em>The New Data and New Challenges in Multimedia Research</em>.
+arXiv:1503.01817 [cs.MM].
+<a href="http://arxiv.org/pdf/1503.01817v1.pdf">[PDF]</a>
+<a href="http://arxiv.org/abs/1503.01817">[Arxiv]</a>
+<a href="http://labs.yahoo.com/news/yfcc100m/">[<strong>Project Page</strong>]</a></p></li>
 </ul>
 </li>
 <li>
@@ -211,13 +137,94 @@ In Third Joint Conference on Lexical and Computation Semantics (*SEM) , 2014.
 
 <ul>
 <li><p>The Visual and Linguistic Treebank consists of a set of 2,424 images with 3 descriptions for each image sourced by asking AMT workers to write one sentence describing the main action in the photo (there are only 10 types of actions in the set) and one sentence describing the other regions not involved in the action. For a set of 341 images, AMT workers additionally identified the bounding boxes of the objects in the description and created the visual dependency representation for each image, which represents the relative positions of the various objects in the image.</p></li>
-<li><p>Image Description using Visual Dependency Representations.
+<li>
+<p>Image Description using Visual Dependency Representations.
 Desmond Elliott and Frank Keller.
 EMNLP 2013.
-<a href="http://aclweb.org/anthology/D/D13/D13-1128.pdf">[PDF]</a></p></li>
+<a href="http://aclweb.org/anthology/D/D13/D13-1128.pdf">[PDF]</a></p>
+
+<h2>
+<a id="3-video-captioning" class="anchor" href="#3-video-captioning" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>3. Video Captioning</strong>
+</h2>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Robocup Soccer Dataset</strong> (UT Austin)</p>
+
+<ul>
+<li><p>There have been many efforts on automatic sportscasting of simulated soccer games. The most recent dataset for training purposes in this domain is a multilingual corpus of Robocup soccer events aligned with human-generated comments in Korean and English.</p></li>
+<li><p>Training a Multilingual Sportscaster: Using Perceptual Context to Learn Language.
+David L. Chen, Joohyun Kim, Raymond J. Mooney.
+In Journal of Artificial Intelligence Research (JAIR) , 37, pages 397-435, 2010.
+<a href="http://www.cs.utexas.edu/%7Eml/clamp/sportscasting/">[<strong>Project Page</strong>]</a>
+<a href="http://dl.acm.org/citation.cfm?id=1861761">[ACM]</a>
+<a href="https://www.jair.org/media/2962/live-2962-4903-jair.pdf">[PDF]</a>
+<a href="http://www.jair.org/papers/paper2962.html">[JAIR link]</a>    </p></li>
+</ul>
+</li>
+<li>
+<p><strong>Video-with-Sentences Dataset</strong> (Purdue University)</p>
+
+<ul>
+<li><p>This work provides a dataset for learning word meanings from short video clips which are manually annotated with one or more sentences. Their dataset manually annotates 3-5 second long 61 video clips with sentences which are highly resctricted in terms of grammar and language.</p></li>
+<li><p>Grounded Language Learning from Video Described with Sentences.
+H. Yu and J. M. Siskind.
+In Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics, 2013, <em>best paper award</em>.
+<a href="http://haonanyu.com/research/acl2013/">[<strong>Project Page</strong>]</a>
+<a href="http://haonanyu.com/wp-content/uploads/2013/05/yu13.pdf">[PDF]</a></p></li>
 </ul>
 </li>
 </ul>
+
+
+
+
+
+<ul>
+<li>
+<p><strong>Multilingual Parallel Video Description Dataset</strong> (UT Austin &amp; MSR)</p>
+
+<ul>
+<li><p>One sentence here.</p></li>
+<li><p>Collecting Highly Parallel Data for Paraphrase Evaluation.
+David L. Chen and William B. Dolan.
+Annual Meetings of the Association for Computational Linguistics (ACL), 2011.
+<a href="http://www.cs.utexas.edu/users/ml/clamp/videoDescription/">[<strong>Project Page</strong>]</a>
+<a href="http://www.cs.utexas.edu/users/ml/papers/chen.acl11.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>How-To Video Captions</strong></p>
+
+<ul>
+<li><p>One sentence here.</p></li>
+<li><p>What's Cookin'? Interpreting Cooking Videos using Text, Speech and Vision.
+Jonathan Malmaud, Jonathan Huang, Vivek Rathod, Nick Johnston, Andrew Rabinovich, and Kevin Murphy.
+NAACL 2015.
+<a href="http://www.cs.ubc.ca/%7Emurphyk/Papers/naacl15.pdf">[PDF]</a></p></li>
+<li><p>Discriminative Unsupervised Alignment of Natural Language Instructions with Corresponding Video Segments.
+I. Naim, Y. Song, Q. Liu, L. Huang, H. Kautz, J. Luo, and D. Gildea. 
+Proc. NAACL 2015.
+<a href="http://acl.cs.qc.edu/%7Elhuang/papers/naim-video.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Saarbrucken Corpus of Textually Annotated Scenes (TACOS Corpus)</strong> (Saarland University &amp;  Max Planck Institute for Informatics)</p>
+
+<ul>
+<li><p>One sentence here.</p></li>
+<li><p>Grounding Action Descriptions in Videos.
+Michaela Regneri, Marcus Rohrbach, Dominikus Wetzel, Stefan Thater, Bernt Schiele, and Manfred Pinkal.
+TACL 2013.
+<a href="http://www.aclweb.org/anthology/Q13-1003">[PDF]</a></p></li>
+</ul>
+</li>
+</ul>
+
+
+
+
 
 <h2>
 <a id="4-beyond-image-captioning" class="anchor" href="#4-beyond-image-captioning" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>4. Beyond Image Captioning</strong>
@@ -300,7 +307,7 @@ arXiv:1502.06108 [cs.CV].
 
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey">Vision to Language Survey</a> is maintained by <a href="https://github.com/VisionToLanguageTeam">VisionToLanguageTeam</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey">Blending Vision &amp; Language in AI: A Survey on the Available Corpora</a> is maintained by <a href="https://github.com/VisionToLanguageTeam">VisionToLanguageTeam</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
