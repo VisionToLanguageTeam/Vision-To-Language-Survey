@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Blending Vision &amp; Language in AI: A Survey on the Available Corpora by VisionToLanguageTeam</title>
+    <title>Blending Vision &amp; Language in AI:    A Survey on the Available Corpora by VisionToLanguageTeam</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Blending Vision &amp; Language in AI: A Survey on the Available Corpora</h1>
+      <h1 class="project-name">Blending Vision &amp; Language in AI:    A Survey on the Available Corpora</h1>
       <h2 class="project-tagline"></h2>
       <a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey" class="btn">View on GitHub</a>
       <a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey/zipball/master" class="btn">Download .zip</a>
@@ -67,9 +67,9 @@ arXiv:1503.01817 [cs.MM].
 <p><strong>Déjà-Image Captions Dataset</strong> (Stony Brook University &amp; UW)</p>
 
 <ul>
-<li><p>The deja-image captions data set consists of naturally occurring captions for images where the captions were found to be nearly identical for multiple images; the language is rich and varied, with 17 percent in a random sample found to be figurative. Each image is augmented with a set of retrieved candidates from the full set, that were vetted by AMT workers to also be good captions for the image.</p></li>
-<li><p>Déjà Image-Captions: A Corpus of Expressive Image Descriptions in Repetition.
-Jianfu Chen, Polina Kuznetsova, David Warren, Yejin Choi.
+<li><p>Déjà-Image Captions Dataset　consists of 180K unique user-generated captions associated with about 4M Flickr images, where one caption is enforced to be associated with multiple images. They query Flickr for 693 of high frequency nouns and further filter captions for containing at least one verb and be "good" captions as judged by Turkers.</p></li>
+<li><p>Jianfu Chen, Polina Kuznetsova, David Warren, Yejin Choi.
+<em>Déjà Image-Captions: A Corpus of Expressive Image Descriptions in Repetition.</em>
 North American Chapter of the Association for Computational Linguistics (NAACL), 2015.
 <a href="http://nlclient83.cs.stonybrook.edu:8081/static/index.html">[<strong>Project Page</strong>]</a>
 <a href="http://www3.cs.stonybrook.edu/%7Ejianchen/papers/naacl2015.pdf">[PDF]</a></p></li>
@@ -81,14 +81,25 @@ North American Chapter of the Association for Computational Linguistics (NAACL),
 <a id="crowd-sourced-captions" class="anchor" href="#crowd-sourced-captions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Crowd-sourced Captions</h3>
 
 <ul>
-<li><p><strong>PASCAL Sentences Dataset (1K)</strong></p></li>
+<li>
+<p><strong>PASCAL Sentences Dataset (1K)</strong> (UIUC)</p>
+
+<ul>
+<li><p>PASCAL is probably one of the first datasets aligning images with captions. Pascal dataset contains 1,000 images with 5 sentences per image written by Amazon Turkers.</p></li>
+<li><p>Ali Farhadi, Mohsen Hejrati, Amin Sadeghi, Peter Young, Cyrus Rashtchian, Julia Hockenmaier, David Forsyth.
+<em>Every Picture Tells a Story: Generating Sentences for Images.</em>
+In proceedings of European conference on Computer Vision (ECCV'10).
+<a href="http://vision.cs.uiuc.edu/pascal-sentences/">[<strong>Project Page</strong>]</a>
+<a href="http://web.engr.illinois.edu/%7Emsadegh2/publications/sentence.pdf">[PDF]</a></p></li>
+</ul>
+</li>
 <li>
 <p><strong>Flickr 8K</strong> (UIUC)</p>
 
 <ul>
 <li><p>This dataset consists of 8,092 Flickr images, each captioned by multiple Amazon Turkers totalling more than 40,000 image description. The focus of the dataset is on people or animals (mainly dogs) performing some specific action. </p></li>
-<li><p>Collecting Image Annotations Using Amazon's Mechanical Turk.
-Cyrus Rashtchian, Peter Young, Micah Hodosh and Julia Hockenmaier.
+<li><p>Cyrus Rashtchian, Peter Young, Micah Hodosh and Julia Hockenmaier.
+<em>Collecting Image Annotations Using Amazon's Mechanical Turk.</em>
 Proc. the NAACL HLT 2010 Workshop on Creating Speech and Language Data with Amazon's Mechanical Turk.
 <a href="http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html">[<strong>Project Page</strong>]</a></p></li>
 </ul>
@@ -98,8 +109,8 @@ Proc. the NAACL HLT 2010 Workshop on Creating Speech and Language Data with Amaz
 
 <ul>
 <li><p>This dataset is an extention of Flickr 8K dataset consisting of 158,915 crowd-sourced captions which describe 31,783 images. This dataset mainly focuses on people performing everyday activities and involved in everyday events.</p></li>
-<li><p>From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions.
-Peter Young, Alice Lai, Micah Hodosh, Julia Hockenmaier.
+<li><p>Peter Young, Alice Lai, Micah Hodosh, Julia Hockenmaier.
+<em>From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions.</em>
 Transactions of the Association for Computational Linguistics 2 (2014): 67-78.
 <a href="http://shannon.cs.illinois.edu/DenotationGraph/">[<strong>Project Page</strong>]</a>
 <a href="http://shannon.cs.illinois.edu/DenotationGraph/TACLDenotationGraph.pdf">[PDF]</a></p></li>
@@ -109,9 +120,10 @@ Transactions of the Association for Computational Linguistics 2 (2014): 67-78.
 <p><strong>Flickr30K Entities</strong> (UIUC)</p>
 
 <ul>
-<li><p>One sentence here.</p></li>
-<li><p>Flickr30k Entities: Collecting Region-to-Phrase Correspondences for Richer Image-to-Sentence Models.
-Bryan Plummer, Liwei Wang, Chris Cervantes, Juan Caicedo, Julia Hockenmaier, and Svetlana Lazebnik.
+<li><p>This datasets augments the Flickr 30K dataset with additional layers of annotation such as 244K coreference chains as
+well as 276K manually annotated bounding boxes for entities.</p></li>
+<li><p>Bryan Plummer, Liwei Wang, Chris Cervantes, Juan Caicedo, Julia Hockenmaier, and Svetlana Lazebnik.
+<em>Flickr30k Entities: Collecting Region-to-Phrase Correspondences for Richer Image-to-Sentence Models.</em>
 arXiv:1505.04870, 2015.
 <a href="http://web.engr.illinois.edu/%7Ebplumme2/Flickr30kEntities/">[<strong>Project Page</strong>]</a>
 <a href="http://arxiv.org/pdf/1505.04870v1.pdf">[PDF]</a>
@@ -119,19 +131,31 @@ arXiv:1505.04870, 2015.
 </ul>
 </li>
 <li>
-<p><strong>Microsoft Research Dense Visual Annotation Corpus</strong> (Microsoft Research)</p>
+<p><strong>Richly Annotated Images</strong> (Microsoft Research)</p>
 
 <ul>
-<li><p>One sentence here.</p></li>
-<li><p>See No Evil, Say No Evil: Description Generation from Densely Labeled Images.
-Mark Yatskar, Michel Galley, Lucy Vanderwende, and Luke Zettlemoyer.
+<li><p>This work provides a set of 500 images selected from Flickr 8K dataset that are densely labeled with 100,000
+textual labels (with bounding boxes and facets annotated for each object) in order to approximate gold standard visual recognition.</p></li>
+<li><p>Mark Yatskar, Michel Galley, Lucy Vanderwende, and Luke Zettlemoyer.
+<em>See No Evil, Say No Evil: Description Generation from Densely Labeled Images.</em>
 In Third Joint Conference on Lexical and Computation Semantics (*SEM) , 2014.
 <a href="http://research.microsoft.com/en-us/downloads/b8887ebe-dc2f-4f4b-94d4-65b8432f7df4/">[<strong>Project Page</strong>]</a>
 <a href="http://homes.cs.washington.edu/%7Emy89/">[Code and Data]</a>
 <a href="http://homes.cs.washington.edu/%7Emy89/publications/StarSem2014-SeeNoEvil.pdf">[PDF]</a></p></li>
 </ul>
 </li>
-<li><p><strong>COCO Dataset</strong> (Microsoft Research)</p></li>
+<li>
+<p><strong>Microsoft COCO Dataset</strong> (Microsoft Research)</p>
+
+<ul>
+<li>Lin et al. gathers images of complex everyday scenes which contain common objects in naturally
+occurring contexts, with the goal of enhancing scene understanding. In this dataset the objects
+in the scene are labeled using per-instance segmentations. In total it contains photos of 91 basic
+object type with 2.5 million labeled instances in 328k images, each paired with 5 captions. This
+dataset gave rise to CVPR 2015 image captioning challenge and is continuing to be a benchmark for
+comparing various aspects of vision and language research.</li>
+</ul>
+</li>
 <li>
 <p><strong>Visual and Linguistic Treebank</strong> (University of Edinburgh)</p>
 
@@ -307,7 +331,7 @@ arXiv:1502.06108 [cs.CV].
 
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey">Blending Vision &amp; Language in AI: A Survey on the Available Corpora</a> is maintained by <a href="https://github.com/VisionToLanguageTeam">VisionToLanguageTeam</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey">Blending Vision &amp; Language in AI:    A Survey on the Available Corpora</a> is maintained by <a href="https://github.com/VisionToLanguageTeam">VisionToLanguageTeam</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
