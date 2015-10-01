@@ -1,0 +1,487 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+<<<<<<< HEAD
+    <title>On Available Datasets for Empirical Methods in Vision &amp; Language by VisionToLanguageTeam</title>
+=======
+    <title>A Survey of Current Datasets for Vision and Language Research</title>
+>>>>>>> 0f0bdf1b2686e6ca6547a97b7f32176dce41283c
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+<<<<<<< HEAD
+      <h1 class="project-name">On Available Datasets for Empirical Methods in Vision &amp; Language</h1>
+=======
+      <h1 class="project-name">A Survey of Current Datasets for Vision and Language Research</h1>
+>>>>>>> 0f0bdf1b2686e6ca6547a97b7f32176dce41283c
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey" class="btn">View on GitHub</a>
+      <a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+
+      <h2>
+<a id="1-introduction" class="anchor" href="#1-introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>1. Introduction</strong>
+</h2>
+
+<p>Integrating vision and language has long been a dream in work on artificial intelligence (AI).
+In the past two years, we have witnessed an explosion of work that brings together vision and language from images to videos and beyond.
+The available corpora have played a crucial role in advancing this area of research.
+In this paper we propose a set of quality metrics for evaluating and analyzing the vision-&amp;-language datasets and classify them accordingly.
+Our analyses show that the most recent datasets have been using more complex language.</p>
+
+<p>If you use this resource of the tools provided, please cite the relevant paper: <br/>
+    Ferraro, F. and Mostafazadeh, N. and Huang, T. and Vanderwende, L. and Devlin, J. and Galley, M. and Mitchell, M. (2015). <a href="http://www.emnlp2015.org/proceedings/EMNLP/pdf/EMNLP021.pdf">A Survey of Current Datasets for Vision and Language Research</a>. 
+    <i>Proceedings of EMNLP 2015</i>. <a href="http://aclweb.org/anthology/D/D15/D15-1021.bib">[bibtex]</a>
+</p>
+
+
+        <h2>
+            <a id="2-tools" class="anchor" href="#2-tools" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>2. Comparison tools</strong>
+            <li>Code for calculating syntactic complexity, both Frazier and Yngve, available <a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey/tree/gh-pages/synplexity">here</a>.</li>
+        </h2>
+<h2>
+<a id="3-image-captioning" class="anchor" href="#3-image-captioning" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>3. Image Captioning</strong>
+</h2>
+
+<h3>
+<a id="3-1-user-generated-captions" class="anchor" href="#3-1-user-generated-captions" aria-hidden="true"><span class="octicon octicon-link"></span></a>3-1. User-generated Captions</h3>
+
+<ul>
+<li>
+<p><strong>SBU Captioned Photo Dataset</strong> (Stony Brook University, 2011) <a href="http://tlberg.cs.unc.edu/vicente/sbucaptions/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This dataset contains 1 million images with original user-generated captions, collected in the wild by systematic querying (specific terms such as objects and actions) and then filtering Flickr photos with descriptions longer than certain mean length.</p></li>
+<li><p>Vicente Ordonez, Girish Kulkarni, Tamara L. Berg. s.
+<em>Im2Text: Describing Images Using 1 Million Captioned Photograph.</em>
+Neural Information Processing Systems(NIPS), 2011.
+<a href="http://tamaraberg.com/papers/generation_nips2011.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Yahoo Flickr Creative Commons 100M Dataset (YFCC-100M)</strong> (Yahoo! Lab, 2015) <a href="http://labs.yahoo.com/news/yfcc100m/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>YFCC-100M contains 100 million media objects (together with their original metadata), about 99.2 million photos
+and 0.8 million videos from Flickr (taken from 2004 until early 2014), all of which are licensed as Creative Commons.</p></li>
+<li><p>Bart Thomee, David A. Shamma, Gerald Friedland, Benjamin Elizalde, Karl Ni, Douglas Poland, Damian Borth, Li-Jia Li.
+<em>The New Data and New Challenges in Multimedia Research</em>.
+arXiv:1503.01817 [cs.MM].
+<a href="http://arxiv.org/pdf/1503.01817v1.pdf">[PDF]</a>
+<a href="http://arxiv.org/abs/1503.01817">[Arxiv]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Déjà Images Dataset</strong> (Stony Brook University &amp; UW, 2015) <a href="http://nlclient83.cs.stonybrook.edu:8081/static/index.html">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>Déjà Images Dataset consists of 180K unique user-generated captions associated with about 4M Flickr images, where one caption is enforced to be associated with multiple images. They query Flickr for 693 of high frequency nouns and further filter captions for containing at least one verb and be "good" captions as judged by Turkers.</p></li>
+<li><p>Jianfu Chen, Polina Kuznetsova, David Warren, Yejin Choi.
+<em>Déjà Image-Captions: A Corpus of Expressive Image Descriptions in Repetition.</em>
+North American Chapter of the Association for Computational Linguistics (NAACL), 2015.
+<a href="http://www3.cs.stonybrook.edu/%7Ejianchen/papers/naacl2015.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="3-2-crowd-sourced-captions" class="anchor" href="#3-2-crowd-sourced-captions" aria-hidden="true"><span class="octicon octicon-link"></span></a>3-2. Crowd-sourced Captions</h3>
+
+<ul>
+<li>
+<p><strong>PASCAL Dataset (1K)</strong> (UIUC, 2010) <a href="http://vision.cs.uiuc.edu/pascal-sentences/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>PASCAL is probably one of the first datasets aligning images with captions. Pascal dataset contains 1,000 images with 5 sentences per image written by Amazon Turkers.</p></li>
+<li><p>Ali Farhadi, Mohsen Hejrati, Amin Sadeghi, Peter Young, Cyrus Rashtchian, Julia Hockenmaier, David Forsyth.
+<em>Every Picture Tells a Story: Generating Sentences for Images.</em>
+In proceedings of European conference on Computer Vision (ECCV'10).
+<a href="http://web.engr.illinois.edu/%7Emsadegh2/publications/sentence.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Flickr 8K Images</strong> (UIUC, 2010) <a href="http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This dataset consists of 8,092 Flickr images, each captioned by multiple Amazon Turkers totalling more than 40,000 image description. The focus of the dataset is on people or animals (mainly dogs) performing some specific action. </p></li>
+<li><p>Cyrus Rashtchian, Peter Young, Micah Hodosh and Julia Hockenmaier.
+<em>Collecting Image Annotations Using Amazon's Mechanical Turk.</em>
+Proc. the NAACL HLT 2010 Workshop on Creating Speech and Language Data with Amazon's Mechanical Turk.
+<a href="http://nlp.cs.illinois.edu/HockenmaierGroup/Papers/AMT2010/W10-0721.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Flickr 30K Images</strong> (UIUC, 2014) <a href="http://shannon.cs.illinois.edu/DenotationGraph/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This dataset is an extention of Flickr 8K dataset consisting of 158,915 crowd-sourced captions which describe 31,783 images. This dataset mainly focuses on people performing everyday activities and involved in everyday events.</p></li>
+<li><p>Peter Young, Alice Lai, Micah Hodosh, Julia Hockenmaier.
+<em>From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions.</em>
+Transactions of the Association for Computational Linguistics 2 (2014): 67-78.
+<a href="http://shannon.cs.illinois.edu/DenotationGraph/TACLDenotationGraph.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Flickr 30K Entities</strong> (UIUC, 2015) <a href="http://web.engr.illinois.edu/%7Ebplumme2/Flickr30kEntities/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This datasets augments the Flickr 30K dataset with additional layers of annotation such as 244K coreference chains as
+well as 276K manually annotated bounding boxes for entities.</p></li>
+<li><p>Bryan Plummer, Liwei Wang, Chris Cervantes, Juan Caicedo, Julia Hockenmaier, and Svetlana Lazebnik.
+<em>Flickr30k Entities: Collecting Region-to-Phrase Correspondences for Richer Image-to-Sentence Models.</em>
+arXiv:1505.04870, 2015.
+<a href="http://arxiv.org/pdf/1505.04870v1.pdf">[PDF]</a>
+<a href="http://arxiv.org/abs/1505.04870">[Arxiv]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Microsoft Research Dense Visual Annotation Corpus</strong> (Microsoft Research, 2014) <a href="http://research.microsoft.com/en-us/downloads/b8887ebe-dc2f-4f4b-94d4-65b8432f7df4/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This work provides a set of 500 images selected from Flickr 8K dataset that are densely labeled with 100,000
+textual labels (with bounding boxes and facets annotated for each object) in order to approximate gold standard visual recognition.</p></li>
+<li><p>Mark Yatskar, Michel Galley, Lucy Vanderwende, and Luke Zettlemoyer.
+<em>See No Evil, Say No Evil: Description Generation from Densely Labeled Images.</em>
+In Third Joint Conference on Lexical and Computation Semantics (*SEM) , 2014.
+<a href="http://homes.cs.washington.edu/%7Emy89/">[Code and Data]</a>
+<a href="http://homes.cs.washington.edu/%7Emy89/publications/StarSem2014-SeeNoEvil.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Microsoft COCO Dataset (MS COCO)</strong> (Microsoft Research, 2014) <a href="http://mscoco.org/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>Lin et al. gathers images of complex everyday scenes which contain common objects in naturally
+occurring contexts, with the goal of enhancing scene understanding. In this dataset the objects
+in the scene are labeled using per-instance segmentations. In total it contains photos of 91 basic
+object type with 2.5 million labeled instances in 328k images, each paired with 5 captions. This
+dataset gave rise to CVPR 2015 image captioning challenge and is continuing to be a benchmark for
+comparing various aspects of vision and language research.</p></li>
+<li><p>Tsung-Yi Lin, Michael Maire, Serge Belongie, Lubomir Bourdev, Ross Girshick, James Hays, Pietro Perona, Deva Ramanan, C. Lawrence Zitnick, Piotr Dollár.
+<em>Microsoft COCO: Common Objects in Context.</em>
+arXiv:1405.0312 [cs.CV].
+<a href="http://arxiv.org/abs/1405.0312">[arxiv]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Abstract Scene Dataset (Clipart)</strong> (MSR, Virginia Tech, CMU, 2013) <a href="http://research.microsoft.com/en-us/um/people/larryz/clipart/abstract_scenes.html">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This dataset was created with the goal of representing real-world scenes by clip arts to study semantic scene understanding isolated from object recognition and segmentation issues in image processing. This dataset contains 10,020 images of children playing outdoors associated with total 60,396 descriptions.</p></li>
+<li><p>C. L. Zitnick and D. Parikh.
+<em>Bringing Semantics Into Focus Using Visual Abstraction.</em>
+IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2013.
+<a href="http://research.microsoft.com/en-us/um/people/larryz/ZitnickParikhAbstractScenes.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+</ul>
+
+
+
+<ul>
+<li>
+<p><strong>Visual and Linguistic Treebank (Visual Dependency Representations, VDR)</strong> (University of Edinburgh, 2013) <a href="http://homepages.inf.ed.ac.uk/s0128959/dataset/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This dataset consists of a set of 2,424 images with 3 one-sentence captions sourced to Amazon Turkers describing the main action in the photo (for the 10 types of actions in the set) and one sentence describing the other regions not involved in the action.</p></li>
+<li><p>Desmond Elliott and Frank Keller.
+<em>Image Description using Visual Dependency Representations.</em>
+EMNLP 2013.
+<a href="http://aclweb.org/anthology/D/D13/D13-1128.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>PASCAL-50S and ABSTRACT-50S</strong> (Virginia Tech, MSR, 2015) <a href="http://ramakrishnavedantam928.github.io/cider/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>The ABSTRACT-50S and PASCAL-50S datasets both contain 50 human sentences for each image. The PASCAL-50S dataset is built upon 1000 images from the UIUC Pascal Sentence Dataset while the ABSTRACT-50S dataset is built upon 500 images from the Abstract Scenes Dataset.</p></li>
+<li><p>Ramakrishna Vedantam, C. Lawrence Zitnick, Devi Parikh.
+<em>Consensus-based Image Description Evaluation.</em>
+IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2015.
+<a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Vedantam_CIDEr_Consensus-Based_Image_2015_CVPR_paper.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="3-video-captioning" class="anchor" href="#3-video-captioning" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>4. Video Captioning</strong>
+</h2>
+
+<ul>
+<li>
+<p><strong>Montreal Video Annotation Dataset</strong></p>
+
+<ul>
+<li>Dataset: <a href="http://www.mila.umontreal.ca/Home/public-datasets/montreal-video-annotation-dataset">http://www.mila.umontreal.ca/Home/public-datasets/montreal-video-annotation-dataset</a>
+</li>
+<li>PDF: <a href="http://arxiv.org/pdf/1503.01070v1.pdf">http://arxiv.org/pdf/1503.01070v1.pdf</a>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Multilingual Corpus of Robocup Soccer Events</strong> (UT Austin, 2010) <a href="http://www.cs.utexas.edu/%7Eml/clamp/sportscasting/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This dataset is a multilingual corpus of Robocup soccer events (e.g., kicking and passing) aligned with human-generated comments in Korean and English. It contains total of four games, 2,036 English and 1,999 Korean comments which are very short in length and limited in vocabulary.</p></li>
+<li><p>David L. Chen, Joohyun Kim, Raymond J. Mooney.
+<em>Training a Multilingual Sportscaster: Using Perceptual Context to Learn Language.</em>
+In Journal of Artificial Intelligence Research (JAIR) , 37, pages 397-435, 2010.
+<a href="http://dl.acm.org/citation.cfm?id=1861761">[ACM]</a>
+<a href="https://www.jair.org/media/2962/live-2962-4903-jair.pdf">[PDF]</a>
+<a href="http://www.jair.org/papers/paper2962.html">[JAIR link]</a>    </p></li>
+</ul>
+</li>
+<li>
+<p><strong>Short Videos Described with Sentences</strong> (Purdue University, 2013) <a href="http://haonanyu.com/research/acl2013/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This work provides a dataset for learning word meanings from short video clips which are manually annotated with one or more sentences. Their dataset manually annotates 3-5 second long 61 video clips with sentences which are highly resctricted in terms of grammar and language.</p></li>
+<li><p>H. Yu and J. M. Siskind.
+<em>Grounded Language Learning from Video Described with Sentences.</em>
+In Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics, 2013, <em>best paper award</em>.
+<a href="http://haonanyu.com/wp-content/uploads/2013/05/yu13.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+<ul>
+<li>
+<p><strong>Microsoft Research Video Description Corpus (MS VDC)</strong> (UT Austin &amp; MSR, 2011) <a href="http://www.cs.utexas.edu/users/ml/clamp/videoDescription/">[<strong>Project Page</strong>]</a>
+<a href="http://research.microsoft.com/en-us/downloads/38cf15fd-b8df-477e-a4e4-a4680caa75af/default.aspx">[Data]</a></p>
+
+<ul>
+<li><p>MS VDC contains parallel descriptions (85,550 English ones) of 2,089 short video snippets (10-25 seconds long). The descriptions are one sentence summary about the action or event in the video as described by Amazon Turkers. In this dataset both paraphrase and bilingual alternatives are captured, hence, the dataset can be useful translation, paraphrasing, and video description purposes.</p></li>
+<li><p>David L. Chen and William B. Dolan.
+<em>Collecting Highly Parallel Data for Paraphrase Evaluation.</em>
+Annual Meetings of the Association for Computational Linguistics (ACL), 2011.
+<a href="http://www.cs.utexas.edu/users/ml/papers/chen.acl11.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>MPII Movie Description dataset</strong></p>
+
+<ul>
+<li>Dataset: <a href="http://www.mpi-inf.mpg.de/movie-description">www.mpi-inf.mpg.de/movie-description</a>
+</li>
+<li>PDF: <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Rohrbach_A_Dataset_for_2015_CVPR_paper.pdf">http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Rohrbach_A_Dataset_for_2015_CVPR_paper.pdf</a>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>MPII Cooking Activities Dataset</strong> (Max Planck Institute for Informatics, 2012) <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/human-activity-recognition/mpii-cooking-activities-dataset/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This is a video corpus that annotates 41 low-level different cooking activities (e.g., "separating eggs" or "cutting veggies") in 212 video segments with average 4.5 minutes length. This corpus specifically annotates participating objects in activities (e.g., TAKE OUT activity has [HAND, KNIFE, DRAWER] participants).</p></li>
+<li><p>M. Rohrbach, S. Amin, M. Andriluka and B. Schiele.
+<em>A Database for Fine Grained Activity Detection of Cooking Activities.</em>
+IEEE Conference on Computer Vision and Pattern Recognition (CVPR), June, (2012).
+<a href="https://www.mpi-inf.mpg.de/fileadmin/inf/d2/amin/rohrbach12cvpr.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>TACoS Multi-Level Corpus</strong></p>
+
+<ul>
+<li>Dataset: <a href="http://www.mpi-inf.mpg.de/tacos">www.mpi-inf.mpg.de/tacos</a>
+</li>
+<li>PDF: <a href="https://www.d2.mpi-inf.mpg.de/sites/default/files/rohrbach14gcpr_1.pdf">https://www.d2.mpi-inf.mpg.de/sites/default/files/rohrbach14gcpr_1.pdf</a>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Saarbrucken Corpus of Textually Annotated Scenes (TACOS Corpus)</strong> (Saarland University &amp;  Max Planck Institute for Informatics, 2013) <a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=tacos">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>The TACOS dataset extends MPII Cooking Activities Dataset by aligning textual descriptions with video segments.</p></li>
+<li><p>Michaela Regneri, Marcus Rohrbach, Dominikus Wetzel, Stefan Thater, Bernt Schiele, and Manfred Pinkal.
+<em>Grounding Action Descriptions in Videos.</em>
+TACL 2013.
+<a href="http://www.aclweb.org/anthology/Q13-1003">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Instructional Video Captions</strong> (Google Inc, 2015 &amp; University of Rochester, 2015)</p>
+
+<ul>
+<li><p>Some recent works have proposed unsupervised learning algorithms for automatically associating sentences in a document with video segments.
+Malmaud et al. focus on the cooking domain, aligning written recipe steps with a videos.
+Naim et al. align the natural language instructions for biological experiments in "wet laboratories" with recorded videos of people performing these experiments.</p></li>
+<li>
+<p>References</p>
+
+<ul>
+<li><p>What's Cookin'? Interpreting Cooking Videos using Text, Speech and Vision.
+Jonathan Malmaud, Jonathan Huang, Vivek Rathod, Nick Johnston, Andrew Rabinovich, and Kevin Murphy.
+NAACL 2015.
+<a href="http://www.cs.ubc.ca/%7Emurphyk/Papers/naacl15.pdf">[PDF]</a></p></li>
+<li><p>Discriminative Unsupervised Alignment of Natural Language Instructions with Corresponding Video Segments.
+I. Naim, Y. Song, Q. Liu, L. Huang, H. Kautz, J. Luo, and D. Gildea. 
+Proc. NAACL 2015.
+<a href="http://acl.cs.qc.edu/%7Elhuang/papers/naim-video.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+<h2>
+<a id="4-beyond-visual-description-datasets" class="anchor" href="#4-beyond-visual-description-datasets" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>4. Beyond Visual Description Datasets</strong>
+</h2>
+
+<ul>
+<li>
+<p><strong>Visual MadLibs (VM)</strong> (UNC, 2015) <a href="http://tamaraberg.com/visualmadlibs/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>VM is a subset of 10,783 images from the MS COCO dataset which aims to go beyond describing which objects are in the image. For a given image, three Amazon Turkers are prompted to complete any of the 12 fill-in-the-blank template questions, such as "when I look at this picture, I feel --", selected automatically based on the image content. This dataset contains total of 360,001 MadLib question and answers.</p></li>
+<li><p>Licheng Yu, Eunbyung Park, Alexander C. Berg, Tamara L. Berg.
+<em>Visual Madlibs: Fill in the blank Image Generation and Question Answering.</em>
+arXiv:1506.00278 [cs.CV].
+<a href="http://arxiv.org/abs/1506.00278">[Arxiv]</a>
+<a href="http://arxiv.org/pdf/1506.00278.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>ReferIt Dataset</strong> (UNC, 2014) <a href="http://tamaraberg.com/referitgame/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This dataset contains 130,525 expressions, referring to 96,654 distinct objects, in 19,894 photographs of natural scenes.</p></li>
+<li><p>Sahar Kazemzadeh, Vicente Ordonez, Mark Matten, Tamara L. Berg.
+<em>ReferItGame: Referring to Objects in Photographs of Natural Scenes.</em>
+Empirical Methods in Natural Language Processing (EMNLP) 2014.  Doha, Qatar.  October 2014.
+<a href="http://tamaraberg.com/papers/referit.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Visual Question Answering (VQA) Dataset</strong> (Virginia Tech &amp; MSR, 2015) <a href="http://www.visualqa.org/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>VQA Dataset is created for the task of open-ended VQA, where a system is presented with an image and a free-form natural-language question (e.g., "how many people are in the photo") about the image and should answer the question. This dataset contains both real images and abstract scenes. For the real images they have selected 123,285 images from MS COCO dataset. In order to remove the burden of low-level vision task, they also crowd-source 10,000 clip-art abstract scenes, made up from 20 "paperdoll" human models with adjustable limbs and over 100 objects and 31 animals. They prompted Amazon Turkers for creating "interesting" questions resulting in 215,150 questions and 430,920 answers.</p></li>
+<li><p>Stanislaw Antol, Aishwarya Agrawal, Jiasen Lu, Margaret Mitchell, Dhruv Batra, C. Lawrence Zitnick, Devi Parikh.
+<em>VQA: Visual Question Answering.</em>
+arXiv:1505.00468 [cs.CL]
+<a href="http://arxiv.org/abs/1505.00468">[Arxiv]</a>
+<a href="http://arxiv.org/pdf/1505.00468v1.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+</ul>
+
+
+
+<ul>
+<li>
+<p><strong>Toronto COCO-QA Dataset</strong> (University of Toronto, 2015) <a href="http://www.cs.toronto.edu/%7Emren/imageqa/data/cocoqa/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This is a simpler VQA dataset where the questions are automatically generated from image captions of MS COCO Dataset. This dataset has total 123,287 images with 117,684 questions with one-word answer about objects, numbers, colors, or locations.</p></li>
+<li><p>Mengye Ren, Ryan Kiros, Richard Zemel.
+<em>Image Question Answering: A Visual Semantic Embedding Model and a New Dataset.</em>
+arXiv:1505.02074 [cs.LG].
+<a href="http://arxiv.org/abs/1505.02074">[Arxiv]</a>
+<a href="http://arxiv.org/pdf/1505.02074v1.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+</ul>
+
+
+
+<ul>
+<li>
+<p><strong>DAQUAR - DAtaset for QUestion Answering on Real-world images</strong></p>
+
+<ul>
+<li>Dataset: <a href="http://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/vision-and-language/visual-turing-challenge/">http://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/vision-and-language/visual-turing-challenge/</a>
+</li>
+<li>PDF: <a href="http://arxiv.org/pdf/1410.0210v4.pdf">http://arxiv.org/pdf/1410.0210v4.pdf</a>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Dataset of Structured Queries and Spatial Relations</strong></p>
+
+<ul>
+<li>Dataset: <a href="http://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/vision-and-language/learning-spatial-relations/">http://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/vision-and-language/learning-spatial-relations/</a>
+</li>
+<li>PDF: <a href="http://arxiv.org/pdf/1411.5190v2.pdf">http://arxiv.org/pdf/1411.5190v2.pdf</a>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Fill-in-the-blank (FITB) &amp; Visual Paraphrasing (VP) Dataset</strong> (Virginia Tech, 2015) <a href="https://filebox.ece.vt.edu/%7Elinxiao/imagine/">[<strong>Project Page</strong>]</a></p>
+
+<ul>
+<li><p>This work leverages semantic common sense knowledge learned from images in two textual tasks: fill-in-the-blank and visual paraphrasing. We propose to "imagine" the scene behind the text, and leverage visual cues from the "imagined" scenes in addition to textual cues while answering these questions. We imagine the scenes as a visual abstraction.</p></li>
+<li><p>Xiao Lin, Devi Parikh.
+<em>Don't Just Listen, Use Your Imagination: Leveraging Visual Common Sense for Non-Visual Tasks.</em>
+arXiv:1502.06108 [cs.CV].
+<a href="http://arxiv.org/abs/1502.06108">[Arxiv]</a>
+<a href="http://arxiv.org/pdf/1502.06108v2.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Freestyle Multilingual Image Question Answering (FM-IQA) Dataset</strong> (Baidu Research &amp; UCLA, 2015)</p>
+
+<ul>
+<li><p>This work focuses on the task of visual question answering, in which the method needs to provide an answer to a freestyle question about the content of an image.
+The dataset is constructed based on the MS COCO dataset.
+It contains 120,360 images with 250,569 Chinese question-answer pairs and their corresponding English translations.</p></li>
+<li><p>Haoyuan Gao, Junhua Mao, Jie Zhou, Zhiheng Huang, Lei Wang, Wei Xu.
+<em>Are You Talking to a Machine? Dataset and Methods for Multilingual Image Question Answering.</em>
+arXiv:1505.05612 [cs.CV].
+<a href="http://arxiv.org/abs/1505.05612">[Arxiv]</a>
+<a href="http://arxiv.org/pdf/1505.05612v1.pdf">[PDF]</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Disneyland Dataset for Blogs and Photo Streams</strong> (2015)</p>
+
+<ul>
+<li>This dataset consists of two resources: </li>
+</ul>
+</li>
+<li>Photo Stream Data: They queried Flicker with keywords related to Disneyland, retrieving photo streams taken by one photographer in a day. Then they manually filtered the streams which were not about Disneyland or contained less than 30 images. Overall, they collected 542,217 unique images of 6,026 valid photo streams.</li>
+<li>
+<p>Blog data: They crawled 53,091 unique blog posts and 128,563 pictures from blogspot, wordpress, and typepad by querying Google. Then park experts manually classified the blog posts into three groups: Travelogue, Disney and Junk. The Travelogue category is the one describing stories and events with multiple images in Disneyland, which is the focus of this work.
+This dataset can be used for joint alignment of photo streams and blogs, where each can help the other for summarization and exploration.</p>
+
+<ul>
+<li>Gunhee Kim, Seungwhan Moon, Leonid Sigal.
+<em>Joint Photo Stream and Blog Post Summarization and Exploration.</em>
+28th IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2015.
+<a href="http://cs.brown.edu/%7Els/Publications/cvpr2015_blogstory.pdf">[PDF]</a>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/VisionToLanguageTeam/Vision-To-Language-Survey">On Available Datasets for Empirical Methods in Vision &amp; Language</a> is maintained by <a href="https://github.com/VisionToLanguageTeam">VisionToLanguageTeam</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
