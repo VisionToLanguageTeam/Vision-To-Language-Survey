@@ -1,2 +1,2 @@
 
-cat example.parsed | ./bin/syn-plexity > output_summary
+cat example.parsed | ./syn-plexity > output_summary
