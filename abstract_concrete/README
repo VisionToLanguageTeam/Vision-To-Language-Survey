@@ -1,0 +1,1 @@
+cat example.dataset | python abstract_ratio.py function_words.txt non-concrete-nouns-utf8.txt

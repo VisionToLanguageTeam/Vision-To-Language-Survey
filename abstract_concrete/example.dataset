@@ -1,0 +1,5 @@
+This is an example dataset.
+Where the text appears line-by-line.
+Some words, such as love, will be counted as abstract.
+Other words, such as bench, will be counted as concrete.
+Concrete words correspond to the set of words that are neither abstract not function words.
